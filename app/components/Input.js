@@ -1,4 +1,4 @@
-import { React } from 'react';
+import React from 'react';
 import { StyleSheet, TextInput } from 'react-native';
 import { inputPlaceHolder } from '../utils/Colors';
 
@@ -18,7 +18,7 @@ const Input = ({ inputValue, onChangeText, onDoneAddItem }) => (
     autoCorrect={false}
     blurOnSubmit={true}
     onSubmitEditing={onDoneAddItem}
-    />
+  />
 );
 
 

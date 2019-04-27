@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
   Text,
   View,
   StyleSheet,
@@ -7,15 +7,15 @@ import {
   ActivityIndicator,
   Platform,
   TouchableOpacity
- } from 'react-native';
+} from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { 
+import {
   itemListText,
   itemListTextStrike,
   circleInactive,
   circleActive,
   deleteIconColor
- } from '../utils/Colors';
+} from '../utils/Colors';
 
 const { height, width } = Dimensions.get('window');
 
@@ -24,7 +24,7 @@ class List extends React.Component {
     const { isCompleted, id, completeItem, incompleteItem } = this.props;
     if (isCompleted) {
       incompleteItem(id);
-    } else{
+    } else {
       completeItem(id)
     }
   };
@@ -49,13 +49,13 @@ class List extends React.Component {
               styles.text,
               isCompleted
                 ? {
-                    color: itemListTextStrike,
-                    textDecorationLine: 'line-through'
-                  }
+                  color: itemListTextStrike,
+                  textDecorationLine: 'line-through'
+                }
                 : { color: itemListText }
             ]}
           >
-            {text}  
+            {text}
           </Text>
         </View>
         {isCompleted ? (
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     width: width / 1.5
   },
   text: {
-    ontWeight: '500',
+    fontWeight: '500',
     fontSize: 16,
     marginVertical: 15
   },

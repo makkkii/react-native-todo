@@ -9,13 +9,7 @@ import Main from './app/Main';
 
 export default class App extends React.Component {
   render() {
-    return (
-      <LinearGradient colors={primaryGradientArray} style={styles.container}>
-        <StatusBar barStyle="light-content" />
-        <Text>Open up App.js to start working on your app!</Text>
-        {/* <Main /> */}
-      </LinearGradient>
-    );
+    return <Main />
   }
 }
 
